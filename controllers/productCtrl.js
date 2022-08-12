@@ -76,6 +76,7 @@ const productCtrl = {
                 product_id, title: title.toLowerCase(), price, description, content, images, category
             })
 
+            //Saveing the new product
             await newProduct.save()
             res.json({msg: "Created a product"})
 
@@ -95,6 +96,7 @@ const productCtrl = {
     //Updating the product by using ._id
     updateProduct: async(req, res) =>{
         try {
+            // fetching the data and intializing to value and updating into the database
             const {title, price, description, content, images, category} = req.body;
             if(!images) return res.status(400).json({msg: "No image upload"})
 

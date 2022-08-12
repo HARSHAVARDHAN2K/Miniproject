@@ -44,7 +44,7 @@ function DetailProduct() {
             <div>
                 <h2>Related products</h2>
 
-                {/* // To display The simillar category items */}
+                {/* // To The simillar category items */}
                 <div className="products">
                     {
                         products.map(product => {

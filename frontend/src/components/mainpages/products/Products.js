@@ -70,6 +70,7 @@ function Products() {
             </div>
         }
 
+{/* displays all the elements */}
         <div className="products">
             {
                 products.map(product => {
